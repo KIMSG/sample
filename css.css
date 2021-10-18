@@ -37,7 +37,7 @@
 
 .background{
   background-color: rgba(0, 0, 0, 0.5);
-  /* position: absolute; */
+  position: absolute;
   position: fixed;
   z-index: 9000;
   width: 100%;
