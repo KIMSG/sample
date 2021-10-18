@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>딜랩 게임</title>
     <style media="screen">
@@ -20,6 +21,12 @@
          * animation tracking-in-expand
          * ----------------------------------------
          */
+
+         *{
+          margin: 0;
+          padding: 0;
+         }
+
         @-webkit-keyframes tracking-in-expand {
           0% {
             letter-spacing: -0.5em;
@@ -45,14 +52,89 @@
           }
         }
 
+        .btn{
+          font-size: 50px;
+          font-weight: 700;
+          background-color: rgb(250, 104, 156);
+          color: azure;
+          width: 90vw;
+          height: 150px;
+          border-radius: 20px;
+          text-align: center;
+          box-shadow: 8px 8px 8px 8px rgb(20, 20, 20);
+          position: fixed;
+          bottom: 0;
+          margin-bottom: 1000px;
+          position: absolute;
+          /* margin-top: 100vw; */
+          transform: translateX(6%);
+        }
 
+        .btn div{
+          transform: translateY(55%);
+        }
+
+        .updown-togle{
+          height: 500px;
+          display: none;
+        }
+        
+        .text{
+          color: rgb(240, 240, 240);
+          font-size: 70px;
+          margin: 0 auto;
+          display: block;
+          font-weight: 700;
+          padding-top: 95vw;
+          text-align: center;
+        }
+
+        .background{
+          background-color: rgba(0, 0, 0, 0.5);
+          /* position: absolute; */
+          position: fixed;
+          z-index: 9000;
+          width: 100%;
+          height: 100%;
+        }
+
+        .back{
+          height: 2500px;
+          background-image: url('./202109271523016778_d.jpg');
+          background-size: cover; 
+          background-repeat:no-repeat;
+          background-position:top;
+        }
+
+        /* body{
+          background-color: #333;
+        } */
     </style>
   </head>
   <body>
     <!-- <img class="flip-horizontal-bck" src="1.png" alt=""> -->
-    <div class="tracking-in-expand">
-      20.	히어로의 보물 2가지 찾기.
-
+    <div class="back">
+      <div class="background">
+      <div class="tracking-in-expand">
+        <div class="updown-togle">
+          <span class='text'>
+            4. 가장 이름이 마음에 드는 <br> 히어로와 사진 찍기.</span>
+        </div>
+        <div class="btn" onclick="click4();">
+          <div class="btn-text"> 미션을 보려면 눌러주세요!</div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
+  <script>
+    console.log('486')
+    const click4 = () => {
+      $('.updown-togle').fadeIn(1000);
+
+      $('.btn').fadeOut(1000);
+
+      console.log('45600');
+    }
+  </script>
 </html>
