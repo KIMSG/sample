@@ -1,0 +1,53 @@
+.btn{
+  font-size: 50px;
+  font-weight: 700;
+  background-color: rgb(250, 104, 156);
+  color: azure;
+  width: 90vw;
+  height: 150px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 8px 8px rgb(20, 20, 20);
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 50vh;
+  position: absolute;
+  /* margin-top: 100vw; */
+  transform: translateX(6%);
+}
+
+.btn div{
+  transform: translateY(55%);
+}
+
+.updown-togle{
+  height: 500px;
+  display: none;
+}
+
+.text{
+  color: rgb(240, 240, 240);
+  font-size: 70px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 700;
+  padding-top: 42vh;
+  text-align: center;
+}
+
+.background{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  position: fixed;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+}
+
+.back{
+  height: 100vh;
+  background-image: url('./202109271523016778_d.jpg');
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-position:top;
+}

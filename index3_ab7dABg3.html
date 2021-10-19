@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css.css">
     <title>딜랩 게임</title>
     <style media="screen">
       .tracking-in-expand {
@@ -20,6 +22,12 @@
          * animation tracking-in-expand
          * ----------------------------------------
          */
+
+         *{
+          margin: 0;
+          padding: 0;
+         }
+
         @-webkit-keyframes tracking-in-expand {
           0% {
             letter-spacing: -0.5em;
@@ -45,15 +53,32 @@
           }
         }
 
-
     </style>
   </head>
   <body>
     <!-- <img class="flip-horizontal-bck" src="1.png" alt=""> -->
-    <div class="tracking-in-expand">
-      <img class="" src="20211006_170651.png" alt=""><br/>
-      3. 어려운 사람과 어려운 문제 풀기.
-
+    <div class="back">
+      <div class="background">
+      <div class="tracking-in-expand">
+        <div class="updown-togle">
+          <span class='text'>
+            3. 어려운 사람과 어려운 문제 풀기</span>
+        </div>
+        <div class="btn" onclick="click4();">
+          <div class="btn-text"> 미션을 보려면 누르시오.</div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
+  <script>
+    console.log('486')
+    const click4 = () => {
+      $('.updown-togle').fadeIn(1000);
+
+      $('.btn').fadeOut(1000);
+
+      console.log('45600');
+    }
+  </script>
 </html>

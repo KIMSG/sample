@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>딜랩 게임</title>
+    <link rel="stylesheet" href="./css.css">
     <style media="screen">
       .tracking-in-expand {
       	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -20,6 +22,12 @@
          * animation tracking-in-expand
          * ----------------------------------------
          */
+
+         *{
+          margin: 0;
+          padding: 0;
+         }
+
         @-webkit-keyframes tracking-in-expand {
           0% {
             letter-spacing: -0.5em;
@@ -45,14 +53,32 @@
           }
         }
 
-
     </style>
   </head>
   <body>
     <!-- <img class="flip-horizontal-bck" src="1.png" alt=""> -->
-    <div class="tracking-in-expand">
-      6.	주말에 출근하는 히어로에게 카드 주기.
-
+    <div class="back">
+      <div class="background">
+      <div class="tracking-in-expand">
+        <div class="updown-togle">
+          <span class='text'>
+            6. 주말에 출근하는 히어로<br>에게 카드 주기</span>
+        </div>
+        <div class="btn" onclick="click4();">
+          <div class="btn-text"> 미션을 보려면 누르시오.</div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
+  <script>
+    console.log('486')
+    const click4 = () => {
+      $('.updown-togle').fadeIn(1000);
+
+      $('.btn').fadeOut(1000);
+
+      console.log('45600');
+    }
+  </script>
 </html>
